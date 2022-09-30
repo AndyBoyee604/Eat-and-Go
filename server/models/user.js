@@ -21,6 +21,8 @@ const userSchema = new Schema(
             required: true,
             minLength: 7
         },
+    },
+    {
         toJSON: {
             virtuals: true,
         },
