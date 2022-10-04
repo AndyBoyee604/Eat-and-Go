@@ -29,13 +29,13 @@ function Navigation(props) {
       return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-          <a className="navbar-brand" style={navStyle} href="/"> <img src="" style={imgStyle}></img> place holder </a>
+          <a className="navbar-brand" style={navStyle} href="/"> Eat-And-Go </a>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Link href="/about" style={navStyle}>Welcome</Nav.Link>
                 <Nav.Link href="/resturants" style={navStyle}>Resturants</Nav.Link>
-                <Nav.Link href="/posts" style={navStyle}>Disscussion</Nav.Link>
+                <Nav.Link href="/posts" style={navStyle}>Discussion</Nav.Link>
                 <a href="/" className="nav-link" onClick={() => Auth.logout()} style={navStyle}>Logout</a>
               </Nav>
             </Navbar.Collapse>
