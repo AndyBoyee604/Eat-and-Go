@@ -1,5 +1,5 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Post } = require('../models');
+const { User, Post, Resturant } = require('../models');
 const { signToken } = require('../utils/auth');
 
 const resolvers = {
@@ -19,6 +19,9 @@ const resolvers = {
     },
     post: async (parent, { postId }) => {
       return Post.findOne({ _id: postId });
+    },
+    resturant: async (parent, { resturantId }) => {
+      return Resturant.find().populate('resturants');
     },
        
   },

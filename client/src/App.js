@@ -7,6 +7,7 @@ import Signup from './pages/Signup'
 import Post from './pages/Post'
 import SinglePost from './pages/SinglePost'
 import User from './pages/User'
+import Resturants from './pages/Resturants'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -66,6 +67,9 @@ function App() {
           </Route>
           <Route exact path="/user">
             <User />
+          </Route>
+          <Route exact path="/resturants">
+            <Resturants />
           </Route>
           <Footer/>
           </div>

@@ -7,15 +7,15 @@ const resturantSchema = new Schema(
             trim: true,
             required: true
         },
-        // image: {
-        //     type: String,
-        // },
+        image: {
+            type: String,
+        },
         description: {
             type: String
         },
     }
 )
 
+const Resturant = model('Resturant', resturantSchema);
 
-const resturant = model('resturant', resturantSchema)
-module.exports = resturant;
+module.exports = Resturant;
