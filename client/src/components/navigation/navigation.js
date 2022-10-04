@@ -35,7 +35,7 @@ function Navigation(props) {
               <Nav className="me-auto">
                 <Nav.Link href="/about" style={navStyle}>Welcome</Nav.Link>
                 <Nav.Link href="/resturants" style={navStyle}>Resturants</Nav.Link>
-                <Nav.Link href="/discussion" style={navStyle}>Disscussion</Nav.Link>
+                <Nav.Link href="/posts" style={navStyle}>Disscussion</Nav.Link>
                 <a href="/" className="nav-link" onClick={() => Auth.logout()} style={navStyle}>Logout</a>
               </Nav>
             </Navbar.Collapse>
@@ -53,7 +53,7 @@ function Navigation(props) {
               <Nav className="me-auto">
                 <Nav.Link href="/about" style={navStyle}>Welcome</Nav.Link>
                 <Nav.Link href="/resturants" style={navStyle}>Resturants</Nav.Link>
-                <Nav.Link href="/discussion" style={navStyle}>Discussion</Nav.Link>
+                <Nav.Link href="/posts" style={navStyle}>Discussion</Nav.Link>
                 <Nav.Link href="/signup" style={navStyle}>Signup</Nav.Link>
                 <Nav.Link href="/login" style={navStyle}>Login</Nav.Link>
               </Nav>
