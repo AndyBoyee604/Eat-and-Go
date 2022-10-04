@@ -67,7 +67,6 @@ function App() {
           <Route exact path="/user">
             <User />
           </Route>
-          {/* <Route path="*" render={() => <div>404 Not Found</div>} /> */}
           <Footer/>
           </div>
       </Router>
