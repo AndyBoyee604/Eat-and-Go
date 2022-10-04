@@ -47,7 +47,7 @@ function Navigation(props) {
       return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-          <a className="navbar-brand" style={navStyle} href="/">  place holder</a>
+          <a className="navbar-brand" style={navStyle} href="/">  Eat-And-Go </a>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
