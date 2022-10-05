@@ -10,7 +10,7 @@ import User from './pages/User'
 import Resturants from './pages/Resturants'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import {
   ApolloClient,
