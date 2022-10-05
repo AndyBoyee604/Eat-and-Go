@@ -24,9 +24,14 @@ const imgStyle = {
   width: "500px",
 };
 
-const ResturantList = ({ resturant }) => {
+const ResturantList = ({ 
+  resturant,
+  name,
+  image,
+  description
+ }) => {
   if (!resturant.length) {
-    return <h3>No Resturants</h3>;
+    return <h3>Resturants</h3>;
   }
 
     return (
