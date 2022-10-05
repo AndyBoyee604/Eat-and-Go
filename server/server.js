@@ -38,8 +38,7 @@ app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
-router.route('/api/users').put(authMiddleware);
-
+router.route('/api').put(authMiddleware);
 
 db.once('open', () => {
   app.listen(PORT, () => {
