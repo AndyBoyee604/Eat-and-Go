@@ -1,7 +1,41 @@
 [
     {
-    "name": "asfasdfasf",
-    "image": "",
-    "description": "asdfasdfsadfsdaf"
-    }
+        "name": "The Lotus Maple Grove",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/lotus.jpg",
+        "description": "Vietnamese Cuisine"
+    },
+    {
+        "name": "Bole",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/bole.jpg",
+        "description": "Ethiopian Cusine"
+    },
+    {
+        "name": "Flame Burger",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/flame.jpg",
+        "description": "Burgers and Steak"
+    },
+    {
+        "name": "Cheng Heng",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/cheng.jpg",
+        "description": "Cambodian Cuisine"
+    },
+    {
+        "name": "Taste of India",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/india.jpg",
+        "description": "Indian Cusine"
+    },
+    {
+        "name": "Pho 400",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/400.jpg",
+        "description": "Vietnamese Cuisine"
+    },
+    {
+        "name": "The Red Sea",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/redsea.jpg",
+        "description": "Ethiopian & Eritrean Cuisine"
+    },
+    {
+        "name": "The Nook",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/nook.jpg",
+        "description": "Burgers, Drinks and Bowling"
 ]
