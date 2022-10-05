@@ -19,7 +19,7 @@ const Resturant = () => {
                 )}
             </div>
             <div>
-                asdfasfsadfdsfasdf
+                asdfasfsadfdsfasdfasdfasfasfasdf
             </div>
         </div>
     )
