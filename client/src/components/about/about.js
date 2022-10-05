@@ -6,12 +6,12 @@ const pStyle = {
 }
 
 function About() {
-    return(
+    return (
         <div className="jumbotron">
-  <h1 className="display-4">Welcome</h1>
-  <p className="lead" style={pStyle}> </p>
-  <hr className="my-4"></hr>
-</div>
+            <h1 className="display-4">Welcome</h1>
+            <p className="lead" style={pStyle}> </p>
+            <hr className="my-4"></hr>
+        </div>
     )
 }
 
