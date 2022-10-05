@@ -15,7 +15,7 @@ const copyStyle = {
 function Footer() {
     return(
         <div className="footer" id="footer">
-            <p style={copyStyle}>© Team itWorksInLocal 2022</p>
+            <p style={copyStyle}>© Team itWorksOnLocal 2022</p>
         </div>
     )
 }
