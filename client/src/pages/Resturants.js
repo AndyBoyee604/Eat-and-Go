@@ -1,6 +1,6 @@
 import React from 'react';
 import { useQuery } from '@apollo/client';
-import ResturantList from '../components/resturantList/resturantList';
+import ResturantList from '../components/ResturantList/resturantList';
 import { QUERY_Resturant } from '../utils/queries';
 
 const Resturant = () => {
