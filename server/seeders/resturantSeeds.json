@@ -5,9 +5,9 @@
         "description": "Vietnamese Cuisine"
     },
     {
-        "name": "The Red Sea",
-        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/redsea.jpg",
-        "description": "Ethiopian & Eritrean"
+        "name": "Bole",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/bole.jpg",
+        "description": "Ethiopian Cusine"
     },
     {
         "name": "Flame Burger",
@@ -28,6 +28,11 @@
         "name": "Pho 400",
         "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/400.jpg",
         "description": "Vietnamese Cuisine"
+    },
+    {
+        "name": "The Red Sea",
+        "image": "https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/redsea.jpg",
+        "description": "Ethiopian & Eritrean Cuisine"
     },
     {
         "name": "The Nook",
