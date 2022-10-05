@@ -2,7 +2,14 @@ import React from 'react';
 import { useQuery } from '@apollo/client';
 import ResturantList from '../components/resturantList/resturantList';
 import { QUERY_Resturant } from '../utils/queries';
-
+import lotus from '../images/lotus.jpg';
+import bole from '../images/bole.jpg';
+import flame from '../images/flame.jpg';
+import cheng from '../images/cheng.jpg';
+import india from '../images/india.jpg';
+import pho400 from '../images/400.jpg';
+import redsea from '../images/redsea.jpg';
+import nook from '../images/nook.jpg';
 
 const linkStyle = {
     color: "#66ccff",
@@ -40,56 +47,110 @@ const Resturant = () => {
                 )}
             </div>
             <section className="resturant">
-                <h1 style={titleStyle}>Unison</h1>
-                
-                    <div className="row" style={resturantStyle}>
-                        <div className="col-sm-8">
-                            <div className="card text-center">
-                                <div className="card-body">
-                                    <h5 className="card-title">Hmong bar and food</h5>
-                                     <img className="img1" src={resturant.image}></img> 
-                                    <p className="card-text">
-                                        Pay a shit ton of money to get messed up and eat fried food.
-                                    </p>
-                                </div>
+                <h1 style={titleStyle}>The Lotus Maple Grove</h1>
+                <div className="row" style={resturantStyle}>
+                    <div className="col-sm-8">
+                        <div className="card text-center">
+                            <div className="card-body">
+                                <img className="img1" src={lotus} alt='lotus maple grove'></img>
+                                <p className="card-text">
+                                    Vietnamese Cuisine
+                                </p>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="resturant">
-                <h1 style={titleStyle}>Pho 99</h1>
-                
-                    <div className="row" style={resturantStyle}>
-                        <div className="col-sm-8">
-                            <div className="card text-center">
-                                <div className="card-body">
-                                    <h5 className="card-title">Locally owned Vietnamese resturant</h5>
-                                    {/* <img className="img1" src={resturant.image}></img> */}
-                                    <p className="card-text">
-                                        Good portions of Pho Diet Bac
-                                    </p>
-                                </div>
+                </div>
+            </section>
+            <section className="resturant">
+                <h1 style={titleStyle}>Bole</h1>
+                <div className="row" style={resturantStyle}>
+                    <div className="col-sm-8">
+                        <div className="card text-center">
+                            <div className="card-body">
+                                <img className="img1" src={bole} alt='bole'></img>
+                                <p className="card-text">
+                                    Ethiopian Cuisine
+                                </p>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section className="resturant">
-                <h1 style={titleStyle}>Mandarin</h1>
-                
-                    <div className="row" style={resturantStyle}>
-                        <div className="col-sm-8">
-                            <div className="card text-center">
-                                <div className="card-body">
-                                    <h5 className="card-title">Chinese/Viet cusine</h5>
-                                    {/* <img className="img1" src={resturant.image}></img> */}
-                                    <p className="card-text">
-                                        Pretty gud stuff
-                                    </p>
-                                </div>
+                </div>
+            </section>
+            <section className="resturant">
+                <h1 style={titleStyle}>Cheng Heng</h1>
+                <div className="row" style={resturantStyle}>
+                    <div className="col-sm-8">
+                        <div className="card text-center">
+                            <div className="card-body">
+                                <img className="img1" src={cheng} alt='cheng heng'></img>
+                                <p className="card-text">
+                                    Cambodian Cuisine
+                                </p>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+            </section>
+            <section className="resturant">
+                <h1 style={titleStyle}>Taste of India</h1>
+                <div className="row" style={resturantStyle}>
+                    <div className="col-sm-8">
+                        <div className="card text-center">
+                            <div className="card-body">
+                                <img className="img1" src={india} alt='taste of india'></img>
+                                <p className="card-text">
+                                    Indian Cuisine
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="resturant">
+                <h1 style={titleStyle}>Pho 400</h1>
+                <div className="row" style={resturantStyle}>
+                    <div className="col-sm-8">
+                        <div className="card text-center">
+                            <div className="card-body">
+                                <img className="img1" src={pho400} alt='pho 400'></img>
+                                <p className="card-text">
+                                    Vietnamese Cuisine
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="resturant">
+                <h1 style={titleStyle}>Red Sea</h1>
+                <div className="row" style={resturantStyle}>
+                    <div className="col-sm-8">
+                        <div className="card text-center">
+                            <div className="card-body">
+                                <img className="img1" src={redsea} alt='red sea'></img>
+                                <p className="card-text">
+                                    Ethiopian & Eritrean Cuisine
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="resturant">
+                <h1 style={titleStyle}>The Nook</h1>
+                <div className="row" style={resturantStyle}>
+                    <div className="col-sm-8">
+                        <div className="card text-center">
+                            <div className="card-body">
+                                <img className="img1" src={nook} alt='the nook'></img>
+                                <p className="card-text">
+                                    Burgers, Drinks and Bowling
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }
