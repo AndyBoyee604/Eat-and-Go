@@ -20,10 +20,6 @@ const resolvers = {
     post: async (parent, { postId }) => {
       return Post.findOne({ _id: postId });
     },
-    resturant: async (parent, { resturantId }) => {
-      return Resturant.find().populate('resturants');
-    },
-       
   },
   Mutation: {
     addUser: async (parent, { username, email, password }) => {

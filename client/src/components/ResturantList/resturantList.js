@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import resturant from "../../../../server/models/Resturant";
+
 
 import '../../App.css'
 
@@ -24,9 +24,8 @@ const imgStyle = {
   width: "500px",
 };
 
-const resturantList = ({ resturants }) => {
-
-  if (!resturants.length) {
+const ResturantList = ({ resturant }) => {
+  if (!resturant.length) {
     return <h3>No Resturants</h3>;
   }
 
@@ -34,7 +33,7 @@ const resturantList = ({ resturants }) => {
       <section className="resturant">
 
         <h1 style={titleStyle}>Resturants</h1>
-        {resturants.map((resturant) => (
+        {resturant.map((resturant) => (
           <div className="row" key={resturant._id} style={resturantStyle}>
           <div className="col-sm-8">
             <div className="card text-center">
@@ -53,4 +52,4 @@ const resturantList = ({ resturants }) => {
     )
 };
 
-export default resturantList;
+export default ResturantList;

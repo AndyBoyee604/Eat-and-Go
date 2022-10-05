@@ -55,3 +55,15 @@ export const ADD_COMMENT = gql`
   }
 `;
 
+export const Resturants = gql`
+mutation Resturants($resturantsId: ID!) {
+  Resturants(resturantId: $resturantsId) {
+    Resturants {
+      _id
+      name
+      image
+      description
+    }
+  }
+}
+`
