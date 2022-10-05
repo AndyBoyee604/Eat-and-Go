@@ -5,29 +5,29 @@ import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
 
 const titleStyle = {
-    backgroundColor: '#66ccff',
-    padding: '20px'
-  }
-  
+  backgroundColor: '#66ccff',
+  padding: '20px'
+}
+
 const linkStyle = {
-    color: '#66ccff',
-  }
-  
-  const errorStyle = {
-    backgroundColor: 'black',
-    color: '#66ccff'
-  }
+  color: '#66ccff',
+}
 
-  const formStyle = {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    padding: '20px'
-  }
+const errorStyle = {
+  backgroundColor: 'black',
+  color: '#66ccff'
+}
 
-  const padding = {
-    padding: '10px'
-  }
+const formStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  padding: '20px'
+}
+
+const padding = {
+  padding: '10px'
+}
 
 const Login = (props) => {
   const [formState, setFormState] = useState({ email: '', password: '' });
@@ -66,49 +66,49 @@ const Login = (props) => {
 
   return (
     <div className="login">
-            <h1 style={titleStyle}>Login</h1>
-            <br/>
-            <Link to="/signup">
-            <button className="btn btn-dark" style={linkStyle}>Go to Signup Page</button>
-            </Link>
+      <h1 style={titleStyle}>Login</h1>
+      <br />
+      <Link to="/signup">
+        <button className="btn btn-dark" style={linkStyle}>Go to Signup Page</button>
+      </Link>
 
-            {data ? (
-              <p>
-                Success! You may now head{' '}
-                <Link to="/">back to the homepage.</Link>
-              </p>
-            ) : (
-              <form onSubmit={handleSubmit} style={formStyle}>
-                <input
-                  className="form-input"
-                  style={padding}
-                  placeholder="Your email"
-                  name="email"
-                  type="email"
-                  value={formState.email}
-                  onChange={handleChange}
-                />
-                <input
-                  className="form-input"
-                  placeholder="******"
-                  style={padding}
-                  name="password"
-                  type="password"
-                  value={formState.password}
-                  onChange={handleChange}
-                />
+      {data ? (
+        <p>
+          Success! You may now head{' '}
+          <Link to="/">back to the homepage.</Link>
+        </p>
+      ) : (
+        <form onSubmit={handleSubmit} style={formStyle}>
+          <input
+            className="form-input"
+            style={padding}
+            placeholder="Your email"
+            name="email"
+            type="email"
+            value={formState.email}
+            onChange={handleChange}
+          />
+          <input
+            className="form-input"
+            placeholder="******"
+            style={padding}
+            name="password"
+            type="password"
+            value={formState.password}
+            onChange={handleChange}
+          />
 
           <button className="btn btn-dark" style={linkStyle}>Login</button>
         </form>
-        )}
+      )}
 
-        {error ? (
-            <div style={errorStyle}>
-              <h3>Form Errors:</h3>
-              <p className="error">The user credentials provided are incorrect, please try again. {error.message}</p>
-            </div>
-          ) : null}
-        </div> 
+      {error ? (
+        <div style={errorStyle}>
+          <h3>Form Errors:</h3>
+          <p className="error">The user credentials provided are incorrect, please try again. {error.message}</p>
+        </div>
+      ) : null}
+    </div>
   );
 };
 

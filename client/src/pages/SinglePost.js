@@ -38,30 +38,30 @@ const SinglePost = () => {
 
   return (
     <section className="post">
-    <h1 style={titleStyle}>Post Discussion</h1>
-          <div className="row bg-dark" style={userStyle}>
-          <div className="col-sm-8">
-            <div class="card text-center">
-              <div class="card-header" style={titleStyle}>{post.createdAt}</div>
-              <div class="card-body">
-                <h5 class="card-title">{post.postBody}</h5>
-                <p class="card-text">
-                  -Posted by {post.username}
-                  
-                </p>
-              </div>
+      <h1 style={titleStyle}>Post Discussion</h1>
+      <div className="row bg-dark" style={userStyle}>
+        <div className="col-sm-8">
+          <div class="card text-center">
+            <div class="card-header" style={titleStyle}>{post.createdAt}</div>
+            <div class="card-body">
+              <h5 class="card-title">{post.postBody}</h5>
+              <p class="card-text">
+                -Posted by {post.username}
+
+              </p>
             </div>
           </div>
-            <div className="bg-dark" style={commentStyle}>
-              <CommentList comments={post.comments} />
-            </div>
-
-            <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
-              <CommentForm postId={post._id} />
-            </div>
-
         </div>
-      </section>
+        <div className="bg-dark" style={commentStyle}>
+          <CommentList comments={post.comments} />
+        </div>
+
+        <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
+          <CommentForm postId={post._id} />
+        </div>
+
+      </div>
+    </section>
   )
 };
 

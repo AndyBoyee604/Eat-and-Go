@@ -4,13 +4,9 @@ import './header.css'
 import Auth from '../../utils/auth'
 
 const Header = () => {
-    const logout = (event) => {
-        event.preventDefault();
-        Auth.logout();
-    };
     return (
         <div className="nav">
-            <Navigation/>
+            <Navigation />
         </div>
     )
 }

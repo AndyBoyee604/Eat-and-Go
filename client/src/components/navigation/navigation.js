@@ -1,21 +1,11 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./navigation.css";
 import Auth from "../../utils/auth";
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap'
+import { Navbar, Container, Nav } from 'react-bootstrap'
 
 const navStyle = {
   color: "#66ccff",
-};
-
-const imgStyle = {
-  height: "40px",
-  width: "40px",
-};
-
-const activeLink = {
-  fontWeight: "bold",
 };
 
 const barStyle = {
@@ -29,7 +19,7 @@ function Navigation(props) {
       return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-          <a className="navbar-brand" style={navStyle} href="/"> Eat-And-Go </a>
+            <a className="navbar-brand" style={navStyle} href="/"> Eat-And-Go </a>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
@@ -47,7 +37,7 @@ function Navigation(props) {
       return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
           <Container>
-          <a className="navbar-brand" style={navStyle} href="/">  Eat-And-Go </a>
+            <a className="navbar-brand" style={navStyle} href="/">  Eat-And-Go </a>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">

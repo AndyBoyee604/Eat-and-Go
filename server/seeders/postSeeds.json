@@ -1,20 +1,18 @@
 [
-    
-    {
-      "postBody": "put something in here",
-      "username": "test"
-    },
-    {
-      "postBody": "awesome restaurant!!",
-      "username": "sara"
-    },
-    {
-      "postBody": "this place is right on point for great Ethiopian cuisine. The food is excellent and the service is top notch. I purchased Derek tibs and kitfo and I fell in love with this place. While I still make my own Ethiopian food at home, this place is my first go for fine cuisine in St. Paul",
-      "username": "preston"
-    },
-    {
-      "postBody": "Excellent vegeterian food! The ingera is soft and melt in your mouth. All the lentils and veggies on the vegetarian plate were deliciously cooked and well spiced. I would order the brown lentils and collard again! The spiced tea is also recommended",
-      "username": "dani"
-    }
+  {
+    "postBody": "put something in here",
+    "username": "test"
+  },
+  {
+    "postBody": "awesome restaurant!!",
+    "username": "sara"
+  },
+  {
+    "postBody": "this place is right on point for great Ethiopian cuisine. The food is excellent and the service is top notch. I purchased Derek tibs and kitfo and I fell in love with this place. While I still make my own Ethiopian food at home, this place is my first go for fine cuisine in St. Paul",
+    "username": "preston"
+  },
+  {
+    "postBody": "Excellent vegeterian food! The ingera is soft and melt in your mouth. All the lentils and veggies on the vegetarian plate were deliciously cooked and well spiced. I would order the brown lentils and collard again! The spiced tea is also recommended",
+    "username": "dani"
+  }
 ]
-  

@@ -2,12 +2,9 @@ const express = require('express');
 const router = require('express').Router();
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 const {
-  createUser,
-  getSingleUser,
-  login,
 } = require('../server/controllers/userController');
 
 const { typeDefs, resolvers } = require('./schemas');
@@ -41,13 +38,13 @@ app.get('*', (req, res) => {
 
 router.route('/api').put(authMiddleware);
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/eat-and-go', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/eat-and-go', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// });
 
-// Use this to log mongo queries being executed!
-mongoose.set('debug', true);
+// // Use this to log mongo queries being executed!
+// mongoose.set('debug', true);
 
 db.once('open', () => {
   app.listen(PORT, () => {

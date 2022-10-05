@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../../App.css'
 import photo from '../../images/about-food.jpg'
 
-const linkStyle = {
-    color: '#66ccff'
-}
 
 const pStyle = {
     margin: '30px'
-}
 
-const divStyle = {
-    paddingBottom: '25px'
 }
 
 const titleStyle = {
@@ -23,16 +16,12 @@ const titleStyle = {
 const About = () => {
 
     return (
-
         <div className="jumbotron">
             <h1 className="display-4" style={titleStyle}>Eat And Go</h1>
-            <img class="steak" src={photo} width="1400px" height="1000px" alt="steak"></img>
-            <p className="lead" style={pStyle}>To dreams a coward the opprespect that fly to sleep; to greath this no mortal shuffer devoutrageousand the proubles, puzzlesh is heir current merit of somethis sicklied o'er a we know not that the of grunt wills bear the natural contumely, to, 'tis question. To die, or no traveller be, thus pause. Thus that may coment make cast of that pith a consummative hue of of? Ther whips a we haveller deat dream: ay, and ent and arms and arrows of grunt with and, but the of time, and by a sea of deat is ressor </p>
+            <img className="steak" src={photo} width="1400px" height="1000px" alt="steak"></img>
+            <p className="lead" style={pStyle}>A place where you can talk food. Post a personal review about a restaurant, let others know of your favorite spot to eat out at and your favorite dish. No judgement here, leave your postive or negative experience of restaurants so others will know what to expect going there. <br />Lets eat and go!</p>
             <hr className="my-4"></hr>
             <p></p>
-
-
-
         </div>
     )
 }

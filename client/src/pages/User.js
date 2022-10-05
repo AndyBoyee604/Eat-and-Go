@@ -10,7 +10,7 @@ const UserPage = () => {
     const username = Auth.getProfile().data.username
     console.log(username)
 
-    const { loading, data } = useQuery(QUERY_USER, {
+    const { loading } = useQuery(QUERY_USER, {
         variables: { username }
     });
 
@@ -20,7 +20,7 @@ const UserPage = () => {
                 {loading ? (
                     <div>LOADING...</div>
                 ) : (
-                    <h1 className="">{}saved should be here.</h1>
+                    <h1 className="">{ }saved should be here.</h1>
                 )}
             </div>
         </div>

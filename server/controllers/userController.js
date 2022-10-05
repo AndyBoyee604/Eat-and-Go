@@ -27,12 +27,12 @@ module.exports = {
         const userData = await User.findOne({ $or: [{ username: body.username }, { email: body.email }] });
 
         if (!userData) {
-            return res.status(400).json({ message: 'Cannot find this user!' }) 
+            return res.status(400).json({ message: 'Cannot find this user!' })
         }
         const passwordCheck = await user.isCorrectPassword(body.password);
 
         if (!passwordCheck) {
-            return res.status(400).json({ message: 'Wrong password!' })  
+            return res.status(400).json({ message: 'Wrong password!' })
         }
         const token = signToken(userData);
         res.json({ token, userData });

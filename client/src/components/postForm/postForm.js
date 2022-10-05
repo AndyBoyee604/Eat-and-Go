@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
 import { ADD_POST } from '../../utils/mutations';
-import { QUERY_POSTS, QUERY_ME } from '../../utils/queries';
+import { QUERY_POSTS } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 
@@ -75,15 +75,14 @@ const PostForm = () => {
   return (
     <div>
       <div className="form" style={hStyle}>
-      <h3>What's on your mind?</h3>
+        <h3>What's on your mind?</h3>
       </div>
 
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
-            }`}
+            className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
+              }`}
           >
             Character Count: {characterCount}/280
           </p>
@@ -117,10 +116,10 @@ const PostForm = () => {
         </>
       ) : (
         <div className="form" style={pStyle}>
-        <p>
-          You need to be logged in to share your posts. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
-        </p>
+          <p>
+            You need to be logged in to share your posts. Please{' '}
+            <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          </p>
         </div>
       )}
     </div>

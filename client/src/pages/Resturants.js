@@ -11,9 +11,6 @@ import pho400 from '../images/400.jpg';
 import redsea from '../images/redsea.jpg';
 import nook from '../images/nook.jpg';
 
-const linkStyle = {
-    color: "#66ccff",
-};
 
 const titleStyle = {
     backgroundColor: "#66ccff",
@@ -24,11 +21,6 @@ const resturantStyle = {
     padding: "20px",
     backgroundColor: '#212429',
     justifyContent: 'Center'
-};
-
-const imgStyle = {
-    height: "300px",
-    width: "500px",
 };
 
 const Resturant = () => {
@@ -68,6 +60,21 @@ const Resturant = () => {
                         <div className="card text-center">
                             <div className="card-body">
                                 <img className="img1" src={bole} alt='bole'></img>
+                                <p className="card-text">
+                                    Ethiopian Cuisine
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="resturant">
+                <h1 style={titleStyle}>Flame Burger</h1>
+                <div className="row" style={resturantStyle}>
+                    <div className="col-sm-8">
+                        <div className="card text-center">
+                            <div className="card-body">
+                                <img className="img1" src={flame} alt='Flame Burger'></img>
                                 <p className="card-text">
                                     Ethiopian Cuisine
                                 </p>
@@ -154,28 +161,5 @@ const Resturant = () => {
         </div>
     )
 }
-
-// import { QUERY_Resturant } from '../utils/queries'
-// const Resturants = () => {
-//     const { loading, data } = useQuery(QUERY_Resturant);
-//     const resturant = data?.resturant || [];
-
-//     return (
-//         <div className="top-level">
-//             <div className="post-list">
-//                 {loading ? (
-//                     <div>LOADING...</div>
-//                 ) : (
-//                     <resturantList 
-//                     resturant={resturant}
-//                     />
-//                 )}
-//             </div>
-//             <div>
-//                 <resturantList />
-//             </div>
-//         </div>
-//     )
-// }
 
 export default Resturant;

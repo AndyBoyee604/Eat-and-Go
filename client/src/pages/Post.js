@@ -15,8 +15,8 @@ const Post = () => {
                 {loading ? (
                     <div>LOADING...</div>
                 ) : (
-                    <PostList 
-                    posts={posts}
+                    <PostList
+                        posts={posts}
                     />
                 )}
             </div>

@@ -46,34 +46,34 @@ function App() {
       <ApolloProvider client={client}>
         <Router>
           <div>
-          <Header/>
-          <Route exact path="/">
-            <About />
-          </Route>
-          <Route exact path="/login">
-            <Login />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/signup">
-            <Signup />
-          </Route>
-          <Route exact path="/posts">
-            <Post />
-          </Route>
-          <Route exact path="/posts/:postId">
-            <SinglePost />
-          </Route>
-          <Route exact path="/user">
-            <User />
-          </Route>
-          <Route exact path="/resturants">
-            <Resturants />
-          </Route>
-          <Footer/>
+            <Header />
+            <Route exact path="/">
+              <About />
+            </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/about">
+              <About />
+            </Route>
+            <Route exact path="/signup">
+              <Signup />
+            </Route>
+            <Route exact path="/posts">
+              <Post />
+            </Route>
+            <Route exact path="/posts/:postId">
+              <SinglePost />
+            </Route>
+            <Route exact path="/user">
+              <User />
+            </Route>
+            <Route exact path="/resturants">
+              <Resturants />
+            </Route>
+            <Footer />
           </div>
-      </Router>
+        </Router>
       </ApolloProvider>
     </div>
   );
