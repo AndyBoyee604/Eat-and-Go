@@ -1,6 +1,6 @@
 # Eat And Go
 ## Description
-This is our Interactive MERN SPA Project 3, for this project we deceide to create a website for users to join and talk food. Leave personal reviews and share their experiences on restaurants they've been to and post about their favorite or least favorite restaurants to eat out at.
+This is our Interactive MERN Project 3, for this project we deceide to create a website for users to join and talk food. Leave personal reviews and share their experiences on restaurants they've been to and post about their favorite or least favorite restaurants to eat out at.
 
 
 ## Built With 
