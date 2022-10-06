@@ -26,7 +26,7 @@ const postList = ({
 
   return (
     <section className="posts">
-      <h1 style={titleStyle}>User Posts</h1>
+      <h1 style={titleStyle}>Let's talk Food!</h1>
       {posts.map((post) => (
         <div key={post._id} className="row bg-dark" style={userStyle}>
           <div className="col-sm-8">
