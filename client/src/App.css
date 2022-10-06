@@ -42,6 +42,10 @@
     height: 100px;
     width: 175px;
   }
+  .img2 {
+    height: 100px;
+    width: 175px;
+  }
 }
 
 @media screen and (min-width: 400px) and (max-width: 450px) {
@@ -49,10 +53,18 @@
     height: 200px;
     width: 275px;
   }
+  .img2 {
+    height: 200px;
+    width: 275px;
+  }
 }
 
-@media screen and (min-width: 500px) and (max-width: 750px) {
+@media screen and (min-width: 500px) and (max-width: 799px) {
   .img1 {
+    height: 300px;
+    width: 400px;
+  }
+  .img2 {
     height: 300px;
     width: 400px;
   }
@@ -63,11 +75,19 @@
     height: 400px;
     width: 600px;
   }
+  .img2 {
+    height: 400px;
+    width: 600px;
+  }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 5000px) {
   .img1 {
     height: 400px;
     width: 600px;
+  }
+  .img2 {
+    height: 700px;
+    width: 900px;
   }
 }
