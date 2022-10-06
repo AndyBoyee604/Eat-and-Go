@@ -12,9 +12,11 @@ This is our Interactive MERN SPA Project 3, for this project we deceide to creat
 * MongoDB
 * Heroku
 
-## Demo
-[Click Here for link to Demo]()<br/>
-![gif]()
+## Link
+[Deployed app on Heroku](https://eat-and-go.herokuapp.com/)
+
+## Screen Shot
+![gif](https://github.com/AndyBoyee604/eat-and-go/blob/main/client/src/images/Eat-And-Go-SS.jpg)
 
 ## Sources Referenced
 [Google](https://www.google.com) |
@@ -22,3 +24,5 @@ This is our Interactive MERN SPA Project 3, for this project we deceide to creat
 [node](https://nodejs.org/en/about/) |
 [MongoDB Forum](https://www.mongodb.com/community/forums/) |
 Modules and Challenges from our U of M Bootcamp
+
+### © Team itWorksOnLocal 2022
